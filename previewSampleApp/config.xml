@@ -11,7 +11,7 @@
     <icon src="icon.png"/>
     <tizen:metadata key="http://samsung.com/tv/metadata/prelaunch.support" value="true"/>
     <tizen:metadata key="http://samsung.com/tv/metadata/devel.api.version" value="2.4"/>
-    <tizen:metadata key="http://samsung.com/tv/metadata/use.accelerator" value="endpoint_URL=https://www.samsungdforum.com/Preview/sampleJSON.json"/>
+    <tizen:metadata key="http://samsung.com/tv/metadata/use.preview" value="endpoint_URL=https://www.samsungdforum.com/Preview/sampleJSON.json"/>
     <name>previewSampleApp</name>
     <tizen:profile name="tv-samsung-public"/>
 </widget>
