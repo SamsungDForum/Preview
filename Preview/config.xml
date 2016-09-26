@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<widget xmlns="http://www.w3.org/ns/widgets" xmlns:tizen="http://tizen.org/ns/widgets" id="http://yourdomain/Preview" version="0.2.1" viewmodes="maximized">
+<widget xmlns:tizen="http://tizen.org/ns/widgets" xmlns="http://www.w3.org/ns/widgets" id="http://yourdomain/Preview" version="0.2.1" viewmodes="maximized">
     <access origin="*" subdomains="true"></access>
     <tizen:app-control>
         <tizen:src name="index.html" reload="disable"/>
         <tizen:operation name="http://samsung.com/appcontrol/operation/eden_resume"/>
     </tizen:app-control>
-    <tizen:application id="bUThxjvdtU.Preview" package="bUThxjvdtU" required_version="2.3"/>
+    <tizen:application id="PXDBPZuW60.Preview" package="PXDBPZuW60" required_version="2.3"/>
     <content src="index.html"/>
     <feature name="http://tizen.org/feature/screen.size.all"/>
     <icon src="icon.png"/>
