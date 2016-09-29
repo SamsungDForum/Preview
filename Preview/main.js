@@ -2,6 +2,30 @@ function handleKeydown(event) {
 	console.log('[TestApp] handleKeydown : ' + event.keyCode);
 
 	switch(event.keyCode) {
+		case 48:
+			logClear();
+
+		break;
+		case 49:
+			play(1);
+
+		break;
+		case 50:
+			play(2);
+
+		break;
+		case 51:
+			paint(3);
+
+		break;
+		case 52:
+			paint(4);
+
+		break;
+		case 53:
+			paint(5);
+
+		break;
 		case 10009:
 			console.log('[TestApp] return');
 
@@ -46,6 +70,13 @@ function main() {
 			log(text);
 	    }
 	});
+
+	tizen.tvinputdevice.registerKey('0');
+	tizen.tvinputdevice.registerKey('1');
+	tizen.tvinputdevice.registerKey('2');
+	tizen.tvinputdevice.registerKey('3');
+	tizen.tvinputdevice.registerKey('4');
+	tizen.tvinputdevice.registerKey('5');
 }
 
 function deepLink() {

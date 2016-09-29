@@ -5,9 +5,6 @@ It is a sample application with Preview.
 * Samsung Tizen TV 2016 models
 * Samsung Tizen TV SDK 2.3.1 version
 
-## How to show preview
-Please follow [this guide](www.samsungdforum.com/~~~)
-
 ## In JSON
 Please check [this sample JSON](www.samsungdforum.com/Preview/sampleJSON.json)
 
@@ -66,4 +63,4 @@ window.addEventListener('appcontrol', deepLink);
 ```
 
 ## SDF guide
-[SDF Guide](www.samsungdforum.com/~~~)
+[SDF Guide](https://www.samsungdforum.com/TizenGuide/tizen4881/index.html)
