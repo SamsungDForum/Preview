@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:tizen="http://tizen.org/ns/widgets" id="http://yourdomain/CallerApp" version="0.2.1" viewmodes="maximized">
+    <access origin="*" subdomains="true"></access>
+    <tizen:app-control>
+        <tizen:src name="index.html" reload="disable"/>
+        <tizen:operation name="http://samsung.com/appcontrol/operation/eden_resume"/>
+    </tizen:app-control>
+    <tizen:application id="fDbe7TgtSV.ServerAPI" package="fDbe7TgtSV" required_version="2.3"/>
+    <content src="index.html"/>
+    <feature name="http://tizen.org/feature/screen.size.all"/>
+    <icon src="icon.png"/>
+    <tizen:metadata key="http://samsung.com/tv/metadata/devel.api.version" value="2.4"/>
+    
+    <!-- Preview using serverAPI -->
+    <tizen:metadata key="http://samsung.com/tv/metadata/use.preview" value="endpoint_URL=https://developer.samsung.com/onlinedocs/tv/Preview/sampleJSON.json"/>
+    <name>ServerAPI</name>
+    <tizen:privilege name="http://tizen.org/privilege/tv.inputdevice"/>
+    <tizen:profile name="tv-samsung-public"/>
+</widget>
