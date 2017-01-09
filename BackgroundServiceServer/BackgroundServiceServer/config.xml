@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns:tizen="http://tizen.org/ns/widgets" xmlns="http://www.w3.org/ns/widgets" id="http://yourdomain/BackgroundServiceLocal" version="0.2.1" viewmodes="maximized">
+	<!-- Set "required_version" value to "2.4" -->
+    <tizen:application id="g3rAasdgsM.BackgroundServiceServer" package="g3rAasdgsM" required_version="2.4"/>
+    
+    <content src="index.html"/>
+    <feature name="http://tizen.org/feature/screen.size.normal.1080.1920"/>
+    <icon src="icon.png"/>
+    
+    <access origin="*" subdomains="true"></access>
+    	
+	<!--
+    	* 
+    	* [ Add app-control ]
+    	* <tizen:src> name - Main page for application 
+    	* <tizen:src> reload - (disable) Not to reload application, if it is already loaded.
+    	*
+   	-->
+   	<tizen:app-control>
+        <tizen:src name="index.html" reload="disable"/>
+        <tizen:operation name="http://samsung.com/appcontrol/operation/eden_resume"/>
+    </tizen:app-control>
+
+    <!--
+    	* 
+    	* [ Add service ]
+    	* <tizen:service> id - Service ID is required such format [application package].[service name] 
+    	* <tizen:content> src - Point to the file containing the service.js
+    	*
+    -->
+    <tizen:service id="g3rAasdgsM.service">
+        <tizen:content src="service/service.js"/>
+        <tizen:name>service</tizen:name>
+        <tizen:description>Service Application</tizen:description>
+        <tizen:metadata key="meta-key" value="meta-value"/>
+        <tizen:category name="http://tizen.org/category/service"/>
+    </tizen:service>
+    
+    <!-- Set "devel.api.version" metadata value to "2.4" -->
+    <tizen:metadata key="http://samsung.com/tv/metadata/devel.api.version" value="2.4"/>
+    
+    <!-- Add use.preview metadata -->
+    <tizen:metadata key="http://samsung.com/tv/metadata/use.preview" value="bg_service"/>
+    
+    <tizen:metadata key="http://samsung.com/tv/metadata/prelaunch.support" value="true"/>
+    
+    <name>BackgroundServiceServer</name>
+    <tizen:privilege name="http://tizen.org/privilege/tv.inputdevice"/>
+    <tizen:privilege name="http://tizen.org/privilege/application.launch"/>
+    <tizen:profile name="tv-samsung-public"/>
+    <tizen:setting screen-orientation="landscape" context-menu="enable" background-support="disable" encryption="disable" install-location="auto" hwkey-event="enable"/>
+</widget>
